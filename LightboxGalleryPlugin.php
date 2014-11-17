@@ -9,7 +9,16 @@
 
 class LightboxGalleryPlugin extends Omeka_Plugin_AbstractPlugin
 {
+	protected $_hooks = array('exhibit_builder_page_head');
+
 	protected $_filters = array('exhibit_layouts');
+
+	public function hookExhibitBuilderPageHead($args) {
+		if(array_key_exists('lightbox-gallery', $args['layouts'])) {
+			queue_js_file('lightbox.min', 'javascripts/lightbox/js');
+			queue_css_file('lightbox', 'javascripts/lightbox/css');
+		}
+	}
 
 	public function filterExhibitLayouts($layouts) {
     	$layouts['lightbox-gallery'] = array(
