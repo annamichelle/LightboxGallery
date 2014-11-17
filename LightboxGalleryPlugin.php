@@ -15,8 +15,8 @@ class LightboxGalleryPlugin extends Omeka_Plugin_AbstractPlugin
 
 	public function hookExhibitBuilderPageHead($args) {
 		if(array_key_exists('lightbox-gallery', $args['layouts'])) {
-			queue_js_file('lightbox.min', 'javascripts/lightbox/js');
-			queue_css_file('lightbox', 'javascripts/lightbox/css');
+			queue_js_file('lightbox.min', 'javascripts/lightbox');
+			queue_css_file('lightbox');
 		}
 	}
 
