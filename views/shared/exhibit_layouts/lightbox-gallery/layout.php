@@ -8,27 +8,16 @@ $galleryPosition = isset($options['gallery-position'])
     : 'left';
 ?>
 <?php if ($showcaseFile): ?>
-<div class="gallery-showcase <?php echo $showcasePosition; ?> with-<?php echo $galleryPosition; ?>">
+<div class="lightbox-gallery-showcase <?php echo $showcasePosition; ?> with-<?php echo $galleryPosition; ?>">
     <?php
         $attachment = array_shift($attachments);
-        echo $this->exhibitAttachment($attachment, 
-        	array('imageSize' => 'fullsize', 
-        		'linkToFile' => 'true', 
-        		'linkToMetadata' => 'false', 
-        		'imgAttributes' => array('data-lightbox' => 'lightbox-gallery')
-        	)
-        );
+        echo $this->exhibitAttachmentLightbox($attachment, array('imageSize' => 'fullsize'));
     ?>
 </div>
 <?php endif; ?>
-<div class="gallery <?php if ($showcaseFile || !empty($text)) echo "with-showcase $galleryPosition"; ?>">
+<div class="lightbox-gallery <?php if ($showcaseFile || !empty($text)) echo "with-showcase $galleryPosition"; ?>">
     <?php 
-    	echo $this->exhibitAttachmentGallery($attachments,
-    		array('linkToMetadata' => 'false',
-    			'linkToFile' => 'fullsize',
-        		'imgAttributes' => array('data-lightbox' => 'lightbox-gallery')
-        	)
-    	); 
+    	echo $this->exhibitAttachmentLightboxGallery($attachments); 
     ?>
 </div>
 <?php echo $text; ?>
