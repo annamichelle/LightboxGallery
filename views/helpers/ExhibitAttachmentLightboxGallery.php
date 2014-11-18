@@ -23,13 +23,6 @@ class LightboxGallery_View_Helper_ExhibitAttachmentLightboxGallery extends Zend_
 			$fileOptions['imageSize'] = 'square_thumbnail';
 		}
 
-		if(!isset($fileOptions['linkAttributes']['data-lightbox'])) {
-			$fileOptions['linkAttributes']['data-lightbox'] = 'lightbox-gallery';
-		}
-
-		$fileOptions['linkToMetadata'] = false;
-		$fileOptions['linkToFile'] = true;
-
 		$html = '';
 		foreach ($attachments as $attachment) {
 			$html .= '<div class="exhibit-item exhibit-gallery-item">';
