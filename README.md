@@ -1,11 +1,9 @@
 LightboxGallery
 ===============
 
-*This plugin is still in development and might not be working just yet! Check back in a couple weeks.* 
-
 The **Lightbox Gallery** plugin adds a new layout to Exhibit Builder. This layout displays attached files in a gallery
-format. Thumbnails in the gallery link to a Lightbox display of a larger version, with a caption that links to the item
-page.
+format. Thumbnails in the gallery link to a Lightbox overlay of a larger version of the image. Captions display
+underneath the Lightbox, rather than underneath the thumbnail images.
 
 This layout is based on the Gallery layout that comes with [Exhibit Builder](https://github.com/omeka/plugin-ExhibitBuilder), 
 developed by the Roy Rosenzweig Center for History and New Media at George Mason University. It uses 
