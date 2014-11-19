@@ -23,7 +23,7 @@ class LightboxGalleryPlugin extends Omeka_Plugin_AbstractPlugin
 	public function filterExhibitLayouts($layouts) {
     	$layouts['lightbox-gallery'] = array(
         	'name' => 'Lightbox Gallery',
-        	'description' => 'A gallery layout using Lightbox to display all files associated with an item.'
+        	'description' => 'A gallery layout that uses Lightbox to display all files attached to an exhibit page.'
     	);
     return $layouts;
 	}
