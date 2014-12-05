@@ -179,6 +179,10 @@ body:after {
   line-height: 1em;
 }
 
+.lb-data .lb-caption a {
+  color: #cceeff;
+}
+
 .lb-data .lb-number {
   display: block;
   clear: left;
