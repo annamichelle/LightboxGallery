@@ -8,7 +8,7 @@ $size = isset($options['file-size'])
 ?>
 <div class="exhibit-items <?php echo $position; ?> <?php echo $size; ?>">
     <?php foreach ($attachments as $attachment): ?>
-        <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
+        <?php echo $this->exhibitAttachmentLightbox($attachment, array('imageSize' => $size)); ?>
     <?php endforeach; ?>
 </div>
 <?php echo $text; ?>
