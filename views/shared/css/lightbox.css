@@ -183,6 +183,10 @@ body:after {
   color: #cceeff;
 }
 
+.lb-data .lb-caption a:hover {
+  color: #ffcccc;
+}
+
 .lb-data .lb-number {
   display: block;
   clear: left;
