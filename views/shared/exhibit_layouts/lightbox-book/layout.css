@@ -42,3 +42,7 @@
 .layout-lightbox-book .later-pages {
     display: none;
 }
+
+.lb-data .lb-details .lb-number {
+    font-size: 18px;
+}
