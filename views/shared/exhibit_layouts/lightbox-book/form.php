@@ -39,4 +39,16 @@ $options = $block->getOptions();
             ));
         ?>
     </div>
+
+    <div class="book-grouping">
+        <?php echo $this->formLabel($formStem . '[options][book-grouping]', __('Book grouping')); ?>
+        <p class="instructions">If you don't want your book to show up with other items you added using lightbox layouts, give it a unique name here</p>
+        <?php if ($options['book-grouping'] === ''): ?>
+            <?php $options['book-grouping'] = 'lightbox-gallery'; ?>
+        <?php endif; ?>
+        <?php
+        echo $this->formText($formStem . '[options][book-grouping]',
+            @$options['book-grouping'], array());
+        ?>
+    </div>
 </div>
