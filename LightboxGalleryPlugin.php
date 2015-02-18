@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Add Subtitle Plugin
+ * Lightbox Gallery Plugin
  *
  * @author Anna Michelle Martinez-Montavon
  * @license http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
