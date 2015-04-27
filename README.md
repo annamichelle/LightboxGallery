@@ -7,4 +7,4 @@ The _Lightbox Gallery_ and _Lightbox File with Text_ layouts will assign the sam
 
 The _Lightbox Book_ layout allows you the option to assign a unique identifier to images attached to the layout block. If you do, those images will open in their own Lightbox overlay and won't be grouped with other images added using Lightbox layouts.
 
-[Exhibit Builder](https://github.com/omeka/plugin-ExhibitBuilder) was developed by the Roy Rosenzweig Center for History and New Media at George Mason University. They use [Lightbox2](https://github.com/lokesh/lightbox2), developed by Lokesh Dhakar.
+[Exhibit Builder](https://github.com/omeka/plugin-ExhibitBuilder), an [Omeka](http://omeka.org/) plugin, was developed by the Roy Rosenzweig Center for History and New Media at George Mason University. _Lightbox Gallery_ uses [Lightbox2](https://github.com/lokesh/lightbox2), developed by Lokesh Dhakar.
